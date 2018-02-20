@@ -1,0 +1,30 @@
+
+<h1>Here are the data in our resource table</h1>
+<table class="ui five column table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Created at </th>
+    <th>Archived at</th>
+    <th>Image url</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let resource of resources,index as i">
+
+    <td>{{resource.id}}</td>
+    <td>{{resource.name}}</td>
+    <td>{{resource.description}}</td>
+    <td>{{resource.createdAt | date: 'dd/MM/yyyy'}}</td>
+    <td>{{resource.archivedAt | date: 'dd/MM/yyyy'}}</td>
+    <td>{{resource.imageUrl}}</td>
+
+  </tr>
+  </tbody>
+</table>
+
+
+<a [routerLink]="['/login']">Login</a>
+
