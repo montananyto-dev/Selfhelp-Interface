@@ -14,7 +14,7 @@ import {RouterModule} from '@angular/router';
 export class AdminLoginComponent implements OnInit {
 
   adminLogin: FormGroup;
-  adminLoginApi = 'https://maven-web-app-20180209152804678.azurewebsites.net/admin';
+  adminLoginApi = 'https://localhost:8080/admin';
 
 
   constructor(private http: HttpClient, private formBuilder: FormBuilder, private router: RouterModule) {
