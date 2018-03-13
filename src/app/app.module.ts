@@ -11,6 +11,9 @@ import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterCatagoryComponent } from './components/filter-catagory/filter-catagory.component';
 import { SearchComponent } from './components/search/search.component';
+import { SimpleSearchComponent } from './components/simple-search/simple-search.component';
+import { ResourceItemComponent } from './components/resource-item/resource-item.component';
+
 
 
 
@@ -28,7 +31,6 @@ const routes: Routes=[
   {
     path:'search',component:SearchComponent
   }
-
 ]
 
 
@@ -38,7 +40,10 @@ const routes: Routes=[
     ResourceComponent,
     AdminLoginComponent,
     FilterCatagoryComponent,
-    SearchComponent
+    SearchComponent,
+    SimpleSearchComponent,
+    ResourceItemComponent
+
   ],
   imports: [
     BrowserModule,
