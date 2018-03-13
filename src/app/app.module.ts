@@ -9,6 +9,8 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
 import {RouterModule, Routes} from '@angular/router';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FilterCatagoryComponent } from './components/filter-catagory/filter-catagory.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -22,6 +24,9 @@ const routes: Routes=[
   },
   {
     path:'home',component:ResourceComponent
+  },
+  {
+    path:'search',component:SearchComponent
   }
 
 ]
@@ -31,7 +36,9 @@ const routes: Routes=[
   declarations: [
     AppComponent,
     ResourceComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    FilterCatagoryComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
