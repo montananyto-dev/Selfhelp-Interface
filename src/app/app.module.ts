@@ -17,22 +17,22 @@ import { ResourceItemComponent } from './components/resource-item/resource-item.
 
 
 
-const routes: Routes=[
+const routes: Routes = [
 
   {
-    path:'',component:AdminLoginComponent
+    path: '', component: AdminLoginComponent
   },
   {
-    path:'login',component:AdminLoginComponent
+    path: 'login', component: AdminLoginComponent
   },
   {
-    path:'home',component:ResourceComponent
+    path: 'home', component: ResourceComponent
   },
   {
-    path:'search',component:SearchComponent
+    path: 'search', component: SearchComponent
   },
   {
-    path:'resourceitem',component:ResourceItemComponent
+    path: 'resourceitem', component: ResourceItemComponent
   }
 ]
 

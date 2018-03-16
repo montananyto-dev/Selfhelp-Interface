@@ -7,12 +7,10 @@
 
   </div>
 
-  <div *ngFor="let resource of resources,index as i">
-    <label>Name: {{resource.name}}</label>
-    <label>Description: {{resource.shortDescription}}</label>
+  <div class="container-fluid" *ngFor="let resource of resources,index as i">
 
+    <label id="label-name">{{resource.name}}</label>
+    <label id="label-description">Description: {{resource.shortDescription}}</label>
 
   </div>
-
-
 </div>

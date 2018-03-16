@@ -8,9 +8,7 @@ import {ResourceService} from '../../../services/resource/resource.service';
 })
 export class ResourceItemComponent implements OnInit {
 
-  name: String;
-  shortDescription:String;
-  resources:Object;
+  resources: Object;
 
   constructor(private resource: ResourceService) {
   }
@@ -18,13 +16,6 @@ export class ResourceItemComponent implements OnInit {
   ngOnInit() {
     this.resource.getAllResources().subscribe(data => {
       this.resources = data;
-      this.name = data[0];
-      this.shortDescription = data[1];
-
-
     });
   }
-
-
-
 }
