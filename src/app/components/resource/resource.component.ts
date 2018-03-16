@@ -14,17 +14,10 @@ export class ResourceComponent implements OnInit {
   }
 
   resources: any;
-  resourceJson;
 
   ngOnInit() {
 
-    this.retrieveUserResources();
-  }
-
-
-  retrieveUserResources() {
     this.resource.getAllResources().subscribe(data => {
-      this.resourceJson = data;
       this.resources = data;
     });
   }
