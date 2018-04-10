@@ -1,16 +1,24 @@
+<div class="general">
 
-<div class="container">
+  <div class="main-container" *ngFor="let resource of resources,index as i">
 
-  <div class="container-fluid">
+    <div class="app">
 
-    <img src="../../../assets/image-resource-item/wellap.JPG" alt="wellap">
+      <div class="image">
+
+         <img class="img" src={{resource.imageUrl}} alt="wellap"/>
+
+      </div>
+
+      <div class="description">
+
+        <label id="label-name">{{resource.name}}</label>
+        <label id="label-description">Description: {{ resource.shortDescription | slice:0:30 }}...</label>
+
+      </div>
+
+    </div>
 
   </div>
 
-  <div class="container-fluid" *ngFor="let resource of resources,index as i">
-
-    <label id="label-name">{{resource.name}}</label>
-    <label id="label-description">Description: {{resource.shortDescription}}</label>
-
-  </div>
 </div>
