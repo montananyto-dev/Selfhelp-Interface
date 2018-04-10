@@ -1,20 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ResourceComponent } from './components/resource/resource.component';
-import {ResourceService} from '../services/resource/resource.service';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
-import {RouterModule, Routes} from '@angular/router';
-import { FormsModule} from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { FilterCategoryComponent } from './components/filter-category/filter-category.component';
 import { SearchComponent } from './components/search/search.component';
 import { SimpleSearchComponent } from './components/simple-search/simple-search.component';
 import { ResourceItemComponent } from './components/resource-item/resource-item.component';
 
+import { ResourceService } from '../services/resource/resource.service';
 
+import { CategoryProvider } from './category.provider';
+import { FilterCheckboxComponent } from './components/filter-checkbox/filter-checkbox.component';
 
 
 const routes: Routes = [
@@ -45,7 +48,8 @@ const routes: Routes = [
     FilterCategoryComponent,
     SearchComponent,
     SimpleSearchComponent,
-    ResourceItemComponent
+    ResourceItemComponent,
+    FilterCheckboxComponent
 
   ],
   imports: [

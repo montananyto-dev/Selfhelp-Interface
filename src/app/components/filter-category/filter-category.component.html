@@ -1,3 +1,7 @@
-<p>
-  filter-catagory works!
-</p>
+<div>
+    <form>
+        <h3>{{category.name}}</h3>
+        <app-filter-checkbox *ngFor="let option of category.options" [option]="option" (click)=check(option)></app-filter-checkbox>
+        
+    </form>
+</div>

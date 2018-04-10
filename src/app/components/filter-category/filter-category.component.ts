@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Category } from '../category.model';
+import { Option } from '../option.model';
 
 @Component({
   selector: 'app-filter-category',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterCategoryComponent implements OnInit {
 
+  @Input() category: Category;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  check(option: Option) : void {
+    option.checked = !option.checked;
+  }
 }
