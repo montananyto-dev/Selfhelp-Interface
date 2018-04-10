@@ -9,7 +9,7 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
 import {RouterModule, Routes} from '@angular/router';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FilterCatagoryComponent } from './components/filter-catagory/filter-catagory.component';
+import { FilterCategoryComponent } from './components/filter-category/filter-category.component';
 import { SearchComponent } from './components/search/search.component';
 import { SimpleSearchComponent } from './components/simple-search/simple-search.component';
 import { ResourceItemComponent } from './components/resource-item/resource-item.component';
@@ -42,7 +42,7 @@ const routes: Routes = [
     AppComponent,
     ResourceComponent,
     AdminLoginComponent,
-    FilterCatagoryComponent,
+    FilterCategoryComponent,
     SearchComponent,
     SimpleSearchComponent,
     ResourceItemComponent
