@@ -1,37 +1,40 @@
-
-<div class="container">
-
 <h1>Resources</h1>
 
-<table class="table table-hover">
+<div class="row">
 
-  <thead class="thead-dark">
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Long description</th>
-    <th>Short description</th>
-    <th>Created at</th>
-    <th>Archived at</th>
-    <th>Image url</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let resource of resources,index as i">
+  <div class="col-12 col-sm-12 col-lg-12">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Long description</th>
+          <th>Short description</th>
+          <th>Created at</th>
+          <th>Archived at</th>
+          <th>Image url</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let resource of resources,index as i">
 
-    <td>{{resource.id}}</td>
-    <td>{{resource.name}}</td>
-    <td>{{resource.longDescription}}</td>
-    <td>{{resource.shortDescription}}</td>
-    <td>{{resource.createdAt | date: 'dd/MM/yyyy'}}</td>
-    <td>{{resource.archivedAt | date: 'dd/MM/yyyy'}}</td>
-    <td>{{resource.imageUrl}}</td>
+          <td>{{resource.id}}</td>
+          <td>{{resource.name}}</td>
+          <td>{{resource.longDescription}}</td>
+          <td>{{resource.shortDescription}}</td>
+          <td>{{resource.createdAt | date: 'dd/MM/yyyy'}}</td>
+          <td>{{resource.archivedAt | date: 'dd/MM/yyyy'}}</td>
+          <td>{{resource.imageUrl}}</td>
 
-  </tr>
-  </tbody>
-</table>
+        </tr>
+        </tbody>
+      </table>
 
 
-<a [routerLink]="['/login']">Login</a>
+      <a [routerLink]="['/login']">Login</a>
 
+    </div>
+
+  </div>
 </div>
