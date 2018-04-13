@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 import { CategoryProvider } from '../../category.provider';
 import { Category } from '../category.model';
@@ -13,8 +14,8 @@ export class SearchComponent implements OnInit {
   service: CategoryProvider;
   categories: Category[];
 
-  constructor() {
-    this.service = CategoryProvider.getInst();
+  constructor(private http: HttpClient) {
+    this.service = CategoryProvider.getInst(http);
     this.service;
     this.categories = this.service.getAllCategories();
   }
