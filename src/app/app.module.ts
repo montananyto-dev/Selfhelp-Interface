@@ -16,7 +16,6 @@ import { ResourceItemComponent } from './components/resource-item/resource-item.
 
 import { ResourceService } from '../services/resource/resource.service';
 
-import { CategoryProvider } from './category.provider';
 import { FilterCheckboxComponent } from './components/filter-checkbox/filter-checkbox.component';
 
 
